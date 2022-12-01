@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <title>Unidad 2</title>
+    <link href="unidades.css" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" &amp;gt;>
+</head>
+
+<body>
+    <div id="menu">
+        <ul class="nav">
+            <h1><a href="portafolio.html">Portafolio</a>
+            </h1>
+            <h1 style="cursor: pointer;"><a style="color: rgb(168, 209, 90);">Temas</a>
+                <ul>
+                    <h1><a href="unidad1.html">Unidad 1</a></h1>
+                    <h1><a href="unidad2.html" style="color: rgb(168, 209, 90);">Unidad 2</a></h1>
+                    <h1><a href="unidad3.html">Unidad 3</a></h1>
+                    <h1><a href="unidad4.html">Unidad 4</a></h1>
+                </ul>
+            </h1>
+            <h1><a href="index.html">Inicio</a></h1>
+        </ul>
+    </div>
+
+    <br><br><br><br>
+
+    <h1>&emsp;Unidad 2</h1>
+    <br><br>
+    <details id="detalles" style="cursor: pointer;">
+        <summary>Registros</summary>
+        <div id="contenido" style="cursor: default;">
+            <br>
+            <h2>Registros del procesador (CPU)</h2>
+            <p>
+                Los registros que encuentran dentro de cada procesador su
+                función principales almacenar los valores de cada uno de los
+                datos,comandos,instrucciones o estados binarios que son los
+                que ordenan qué dato debe procesarse, así como la forma en
+                la que se debe realizar.
+                Un registro no deja de ser una memoria de velocidad alta y
+                con poca capacidad.
+                Cada registro puede contener una instrucción, una dirección
+                de almacenamiento o cualquier tipo de dato.
+            </p>
+            <br>
+            <p>
+                En un procesador encontramos espacios con una capacidad
+                que oscila entre 4 y 64 bits porque cada registro debe tener un
+                tamaño suficiente para contener una instrucción. En el caso de
+                que un ordenador de 64 bit, cada registro de tener un tamaño
+                de 64 bits.
+
+                Cada procesador tiene varias asignaciones o tareas que debe
+                de realizar para el manejo de la información.
+                La información es recibida generalmente en código binario,
+                procedente de las aplicaciones para, después, procesarlos de
+                una forma determinada.
+
+                Digamos que el procesador traduce esos datos para que
+                nosotros, los usuarios, los entendamos.
+                Dentro de un microprocesador encontramos el registro de
+                información, cuya función es guardar de forma temporal los
+                datos a los que se accede frecuentemente.
+            </p>
+            <img src="img/Unidad1/12.jpg">
+            <br>
+            <br>
+            <h2>Tipos de registros</h2>
+            <p>Los registros del procesador se dividen o clasifican
+                atendiendo al propósito que sirven o a las instrucciones que
+                les ordenan.</p>
+            <br>
+            <h2>Registros de datos</h2>
+            <p>
+                Guardan valores de datos numéricos, como son los
+                caracteres o pequeñas órdenes.
+                Los procesadores antiguos tenían un registro especial de
+                datos: el acumulador, el cual era usado para operaciones
+                determinadas.
+            </p>
+            <br>
+            <h2>Registro de datos de memoria (MDR)</h2>
+            <p>
+                Es un registro que se encuentra en el procesador y que está
+                conectado al bus de datos. Tiene poca capacidad y una
+                velocidad alta por la que escribe o lee los datos del bus que
+                van dirigidos a la memoria o al puerto E/S, es decir, un
+                periférico.
+            </p>
+            <br>
+            <h2>Registros de direcciones</h2>
+            <p>
+                Guardan direcciones que son usadas para acceder a la
+                memoria principal o primaria, que solemos conocer como
+                ROM o RAM. En este sentido, podemos ver procesadores con
+                registros que se usan solo para guardar direcciones o valores
+                numéricos.
+            </p>
+            <p>
+                <br>
+            <h2>Registros de propósito general (GPRs)</h2>
+            <p>
+                Son registros que sirven para almacenar direcciones o datos
+                generales. Se trata de una especie de registros mixtos que,
+                como su propio indica, no tienen una función específica.
+            </p>
+            <h2>Registros de propósito específico (SPRs)</h2>
+            <p>
+                En esta ocasión, estamos ante registros que guardan datos del
+                estado del sistema, como puede ser el registro de estado o el
+                instruction pointer.
+            </p>
+            <h2>Registros de estado</h2>
+            <p>
+                Sirven para guardar valores reales cuya función es determinar
+                cuándo una instrucción debe ejecutarse o no.
+                También se le conoce como CCR (Condition Code Register).
+                Dentro de este tipo de registros, encontramos el siguiente:
+            </p>
+            <h2>Registro de bandera o “FLAGS“</h2>
+            <p>
+                Lo encontramos en los procesadores Intel con
+                arquitectura X86. Estamos ante un registro con 16 bits de
+                ancho. Pero, tiene 2 sucesores:
+                EFLAGS, con 32 bits de ancho.
+                RFLAGS, con 64 bits de ancho.
+                Registros de coma flotante.
+            </p>
+            <br>
+            <p>
+                La coma flotante es una representación, en forma de fórmula,
+                de números reales de distintos tamaños que sirve para realizar
+                operaciones aritméticas. Nos encontraremos con ella en
+                sistemas que requieren sistemas de procesados muy rápidos.
+                Por tanto, estos registros guardan estas representaciones en
+                muchísimas arquitecturas.
+            </p>
+            <h2>Registros constantes</h2>
+            <p>
+                Su cometido es guardar valores de sólo lectura como son el
+                0, 1 ó π.
+            </p>
+            </p>
+            <img src="img/Unidad1/13.jpg">
+        </div>
+    </details>
+    <br><br>
+    <details id="detalles" style="cursor: pointer;">
+        <summary>Organización</summary>
+        <div id="contenido" style="cursor: default;">
+            <br>
+            <p>
+            <h2>Ciclo de la instrucción</h2>
+            <p>
+                El Ciclo Instrucción cuenta con dos fases, la primera es la obtención
+                (búsqueda) y la segunda es la fase de ejecución:
+            </p>
+            </p>
+            <img src="img/Unidad1/14.jpg">
+            <p>
+            <h2>Ciclo Fetch-Decode-Execute</h2>
+            <p>
+                Un ciclo de instrucción (también llamado ciclo de fetch-and-execute
+                o ciclo de fetch-decode-execute en inglés) es el período que tarda la
+                unidad central de procesamiento (CPU) en ejecutar una instrucción
+                de lenguaje máquina.
+            </p>
+            <p>
+                Comprende una secuencia de acciones determinada que debe llevar
+                a cabo el CPU para ejecutar cada instrucción en un programa. Cada
+                instrucción del juego de instrucciones de un CPU puede requerir
+                diferente número de ciclos de instrucción para su ejecución. Un
+                ciclo de instrucción está formado por uno o más ciclos máquina.
+            </p>
+            <br>
+            <p>
+                Para que cualquier sistema de proceso de datos basado en
+                microprocesador (por ejemplo un ordenador o computadora
+                personal) o microcontrolador (por ejemplo un reproductor de MP3)
+                realice una tarea (programa) primero debe buscar cada instrucción
+                en la memoria principal y luego ejecutarla.
+            </p>
+            </p>
+            <img src="img/Unidad1/15.jpg">
+            <br>
+            <p>
+            <h2>Segmentación de instrucciones</h2>
+            <p>
+                El objetivo de la segmentación es ejecutar simultáneamente
+                diferentes etapas de distintas instrucciones, lo cual permite aumentar
+                el rendimiento del procesador sin tener que hacer más rápidas todas
+                las unidades del procesador (ALU, UC, buses, etc.) y sin tener que
+                duplicarlas.
+            </p>
+            <p>La división de la ejecución de una instrucción en diferentes etapas se
+                debe realizar de tal manera que cada etapa tenga la misma duración,
+                generalmente un ciclo de reloj.</p>
+
+            <p>Es necesario añadir registros para almacenar los resultados
+                intermedios entre las diferentes etapas, de modo que la información
+                generada en una etapa esté disponible para la etapa siguiente.
+            </p>
+            <p>La segmentación es como una cadena de montaje. En cada etapa de
+                la cadena se lleva a cabo una parte del trabajo total y cuando se
+                acaba el trabajo de una etapa.
+                El producto pasa a la siguiente y así sucesivamente hasta llegar al
+                final.
+                Si hay N etapas, se puede trabajar sobre N productos al mismo
+                tiempo y, si la cadena está bien equilibrada, saldrá un producto
+                acabado en el tiempo que se tarda en llevar a cabo una de las etapas.
+                De esta manera, no se reduce el tiempo que se tarda en hacer un
+                producto, sino que se reduce el tiempo total necesario para hacer una
+                determinada cantidad de productos porque las operaciones de cada
+                etapa se efectúan simultáneamente.</p>
+            </p>
+            <br>
+            <p>
+            <h2>Conjunto de instrucciones</h2>
+            <p>
+                La segmentación de instrucciones es similar al uso de una cadena de
+                montaje en una fábrica de manufacturación. En las cadenas de
+                montaje, el producto pasa a través de varias etapas de producción
+                antes de tener el producto terminado.
+            </p>
+            <p>
+                Cada etapa o segmento de la
+                cadena está especializada en un área específica de la línea de
+                producción y lleva a cabo siempre la misma actividad. Esta
+                tecnología es aplicada en el diseño de procesadores eficientes.
+            </p>
+            </p>
+
+            <p>
+                A estos procesadores se les conoce como pipeline processors. Estos
+                están compuestos por una lista de segmentos lineales y secuenciales
+                en donde cada segmento lleva a cabo una tarea o un grupo de tareas
+                computacionales. Los datos que provienen del exterior se introducen
+                en el sistema para ser procesados.
+                La computadora realiza operaciones con los datos que tiene
+                almacenados en memoria, produce nuevos datos o información para
+                uso externo.
+                Las arquitecturas y los conjuntos de instrucciones se pueden
+                clasificar considerando aspectos posibles:
+                Almacenamiento de operandos en la CPU: dónde se ubican los
+                operandos aparte de la memoria.
+            </p>
+
+            Número de operandos explícitos por instrucción: cuántos operandos
+            se expresan en forma explícita en una instrucción típica.
+            Como son 0,1,2,3.
+            Posición del operando: Todos en los registros internos de la CPU.
+            Cómo se especifica la dirección de memoria (modos de
+            direccionamiento disponible.
+            Operaciones: Qué operaciones están disponibles en el conjunto de
+            instrucciones.
+
+            Tipo y tamaño de operandos y cómo se especifican.
+            </p>
+        </div>
+    </details>
+
+    <br><br><br>
+    <div id="pie">
+        <div>
+            <h5><br><img src="img/tec.png"><a id="tec" href="https://saltillo.tecnm.mx" target="_blank"
+                    rel="noopener noreferrer">Instituto
+                    tecnológico de Saltillo</a></h5>
+        </div>
+        <div>
+            <h5 style="margin: 3% 0;"><img src="img/instagram.png"><a
+                    href="https://instagram.com/el_r1chy?igshid=YmMyMTA2M2Y=" target="_blank"
+                    rel="noopener noreferrer">Instagram</a></h5>
+            <h5 style="margin: -1% 0;"><img src="img/facebook.jpg"><a
+                    href="https://www.facebook.com/ricardo.soriaalarcon" target="_blank"
+                    rel="noopener noreferrer">Facebook</a></h5>
+        </div>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,155 @@
+html {
+    background-color: black;
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+A {
+    text-decoration: none;
+}
+
+.contenedor {
+    width: 100%;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+body {
+    background-image: url(img/fondo-difuminado.png);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-color: black;
+}
+
+#menu {
+    float: right;
+    margin: auto;
+    width: 500px;
+
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0px;
+    right: 0px;
+    padding: 0px;
+    font-weight: bold;
+    font-size: 170%;
+
+}
+
+.nav>h1 {
+    float: right;
+    font-size: 23px;
+}
+
+.nav h1 a {
+    background-color: rgb(0, 0, 0);
+    color: #fff;
+    text-decoration: none;
+    padding: 5px 10px;
+    display: block;
+
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0px;
+    font-size: 20px;
+    height: 25px;
+
+}
+
+.nav h1 a:hover {
+    color: rgb(168, 209, 90);
+}
+
+.nav h1 ul {
+    display: none;
+    position: absolute;
+    min-width: 100px;
+}
+
+.nav h1:hover>ul {
+    display: block;
+}
+
+
+
+#logo {
+    color: white;
+}
+
+#logo>img {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    width: 135px;
+    border-radius: 60px;
+}
+
+#titulo {
+    text-align: center;
+    color: white;
+    font-size: 100%;
+    margin-bottom: -8%;
+}
+
+#titulo>h1 {
+    font-size: 300%;
+}
+
+#titulo>h2 {
+    font-size: 150%;
+}
+
+#boton {
+    display: block;
+    width: 80px;
+    font-weight: 700;
+    background-color: rgb(168, 209, 90);
+    border-radius: 50px;
+    padding: 15px 30px;
+    margin: 150px 130px;
+    color: rgb(0, 0, 0);
+    text-align: center;
+}
+
+#boton:hover {
+    color: rgb(255, 255, 255);
+}
+
+#proposito {
+    text-align: center;
+    color: white;
+    font-size: 150%;
+}
+
+#pie {
+    text-align: center;
+    width: 100%;
+    color: white;
+    font-size: 130%;
+    background-color: black;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+#pie>div {
+    width: 50%;
+}
+
+#pie>div>h5>img {
+    width: 30px;
+    vertical-align: middle;
+}
+
+#pie>div>h5>a {
+    color: white;
+}
+
+#pie>div>h5>a:hover {
+    color: rgb(168, 209, 90);
+}

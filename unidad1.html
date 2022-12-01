@@ -1,0 +1,862 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Unidad 1</title>
+    <link href="unidades.css" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" &amp;gt;>
+
+</head>
+
+<body>
+
+
+    <div id="menu">
+        <ul class="nav">
+            <h1><a href="portafolio.html">Portafolio</a>
+            </h1>
+            <h1 style="cursor: pointer;"><a style="color: rgb(168, 209, 90);">Temas</a>
+                <ul>
+                    <h1><a href="unidad1.html" style="color: rgb(168, 209, 90);">Unidad 1</a></h1>
+                    <h1><a href="unidad2.html">Unidad 2</a></h1>
+                    <h1><a href="unidad3.html">Unidad 3</a></h1>
+                    <h1><a href="unidad4.html">Unidad 4</a></h1>
+                </ul>
+            </h1>
+            <h1><a href="index.html">Inicio</a></h1>
+        </ul>
+    </div>
+
+    <br><br><br><br>
+
+    <h1>&emsp;Unidad 1</h1>
+    <br><br>
+
+    <details id="detalles" style="cursor: pointer;">
+        <summary>Arquitectura de Computadoras</summary>
+        <div id="contenido" style="cursor: default;">
+            <br>
+            <h2>Arquitectura de Computadoras</h2>
+            <p>Arquitectura de computadoras. Es el diseño y la
+                organización de un sistema para un equipo de cómputo.
+            </p>
+            <p>Es un modelo y descripción de cada función, así como los
+                requerimientos y las implementaciones de diseño para varias
+                partes del equipo de cómputo.
+                Principalmente enfocamos en la Unidad Central de
+                Procesamiento lo conocemos como (CPU) el cual trabaja
+                internamente y accede a las direcciones de memoria y a los
+                sistemas de entrada salida, periféricos.
+                También suele definirse como la selección e interconexión
+                de los componentes de hardware para crear computadoras
+                según los requerimientos de funcionalidad, rendimiento y
+                costo.
+                El equipo de cómputo recibe y envía la información a través
+                de los periféricos por medio de los canales de distribución o
+                buses (cableado físico de interconexión).</p>
+            <br>
+            <p>El CPU se encarga de procesar la información que le llega al
+                equipo de cómputo.
+                El intercambio de información se tiene que hacer con los
+                periféricos y el CPU.
+
+                Todas aquellas unidades de un sistema exceptuando el CPU
+                se denomina periférico, por lo que el equipo de cómputo
+                tiene dos partes bien diferenciadas, que son: el CPU (se
+                encarga de ejecutar programas y que está compuesta por la
+                memoria principal, la (ALU) Unidad Aritmética Lógica y la
+                (UC) unidad de control) y los periféricos (que pueden ser de
+                entrada, salida, entrada-salida y las interconexiones).
+            </p>
+            <br>
+            <h2>Modelos de Arquitectura Clásicas</h2>
+            <p>Estas arquitecturas se desarrollaron en las primeras
+                computadoras electromecánicas y de tubos de vacío.
+                Hay dos arquitecturas distintas relacionadas con el uso y
+                distribución de la memoria: Arquitectura de Jonh Von
+                Neumman y Arquitectura Harvard.
+            </p>
+            <br>
+            <h2>Arquitectura Von Neumann</h2>
+            <p>
+                Tradicionalmente los sistemas con microprocesadores se
+                basan en esta arquitectura, en la cual la unidad central de
+                proceso (CPU), está conectada a una memoria principal
+                única (casi siempre sólo RAM) donde se guardan las
+                instrucciones del programa y los datos. A dicha memoria se
+                accede a través de un sistema interconexión de buses único
+                (control, direcciones y datos).
+            </p>
+            <br>
+            <p>
+                En un sistema con arquitectura Von Neumann el tamaño de
+                la unidad de datos o instrucciones está fijado por el ancho
+                del bus que comunica la memoria con la CPU. Así un
+                microprocesador de 8 bits con un bus de 8 bits, tendrá que
+                manejar datos e instrucciones de una o más unidades de 8
+                bits (bytes) de longitud.
+                Si tiene que acceder a una instrucción o dato de más de un
+                byte de longitud, tendrá que realizar más de un acceso a la
+                memoria.
+                El tener un único bus hace que el microprocesador sea más
+                lento en su respuesta, ya que no puede buscar en memoria
+                una nueva instrucción mientras no finalicen las
+                transferencias de datos de la instrucción anterior.
+
+                Las computadoras digitales convencionales presentan un
+                aspecto Von Neumann. Este modelo consta de cinco
+                componentes principales.
+            </p>
+            <p>Unidad de Memoria</p>
+            <p>Unidad de Entrada/Salida</p>
+            <p>Unidad de Control, Incluidos CPU</p>
+            <p>Unidad Aritmética Lógica, Incluida en CPU</p>
+            <p>Registros de Programas, Incluidos en CPU</p>
+            <br>
+            <br>
+            <img src="img/Unidad1/Neuman.png">
+            <p>Modelo Von Neuman</p>
+            <br>
+            <br>
+            <p>
+                Las instrucciones provenientes del sistema de entrada, son
+                almacenados por la memoria, procesados por la ALU bajo la
+                dirección de la unidad de control. Los resultados obtenidos
+                son enviados a la unidad de salida.
+            </p>
+            <p>
+                El programa almacenado es lo más importante en el modelo.
+                Los programas se almacenan en la memoria del equipo junto
+                con los datos a procesar.
+                En las computadoras de programa almacenado, el programa
+                puede manipularse como si se tratara de datos. Este concepto
+                da origen a los compiladores, sistemas operativos y es la
+                base de la gran versatilidad de las computadoras modernas.
+            </p>
+            <br>
+            <h2>Limitaciones Von Neumann</h2>
+            <p>
+                La longitud de las instrucciones por el bus de datos, que hace
+                que el microprocesador tenga que realizar varios accesos a
+                memoria para buscar instrucciones complejas.
+
+                La velocidad de operación a causa del bus único para datos e
+                instrucciones que no deja acceder simultáneamente a unos y
+                otras, lo cual impide superponer ambos tiempos de acceso.
+            </p>
+            <br>
+            <h2>Modelo Harvard</h2>
+            <p>
+                Esta arquitectura utiliza los Micro controladores, tiene la
+                unidad central de proceso (CPU) conectada a dos memorias
+                (una con las instrucciones y otra con los datos) por medio de
+                dos buses diferentes.
+                Una de las memorias contiene solamente las instrucciones
+                del programa (Memoria de Programa), y la otra sólo
+                almacena datos (Memoria de Datos).
+            </p>
+            <p>
+                Ambos buses son totalmente independientes lo que permite
+                que la CPU pueda acceder de forma independiente y
+                simultánea a la memoria de datos y a la de instrucciones.
+            </p>
+            <p>
+                Como los buses son independientes estos pueden tener
+                distintos contenidos en la misma dirección y también distinta
+                longitud.
+                También la longitud de los datos y las instrucciones puede
+                ser distinta, lo que optimiza el uso de la memoria en general.
+            </p>
+            <p>
+                Para un procesador de Set de Instrucciones Reducido, o
+                RISC (Reduced Instrucción Set Computer), el set de
+                instrucciones y el bus de memoria de programa pueden
+
+                diseñarse de tal manera que todas las instrucciones tengan
+                una sola posición de memoria de programa de longitud.
+            </p>
+            <p>
+                Además, al ser los buses independientes, el CPU puede
+                acceder a los datos para completar la ejecución de una
+                instrucción, y al mismo tiempo leer la siguiente instrucción a
+                ejecutar.
+            </p>
+            <br>
+            <br>
+            <img src="img/Unidad1/Harvard.png">
+            <p>Modelo Harvard</p>
+            <br>
+            <br>
+            <p>El tamaño de las instrucciones no está relacionado con el de
+                los datos, y por lo tanto puede ser optimizado para que
+                cualquier instrucción ocupe una sola posición de memoria de
+                programa, logrando así mayor velocidad y menor longitud de
+                programa.
+                El tiempo de acceso a las instrucciones puede superponerse
+                con el de los datos, logrando una mayor velocidad en cada
+                operación.
+            </p>
+            <p>
+                La principal desventaja de esta arquitectura; el bus de datos
+                y direcciones único se convierte en un cuello de botella por
+                el cual debe pasar toda la información que se lee de o se
+
+                escribe a la memoria, obligando a que todos los accesos a
+                esta sean secuenciales.
+            </p>
+            <p>
+                Limita el grado de paralelismo (acciones que se pueden
+                realizar al mismo tiempo) y por lo tanto, el desempeño de la
+                computadora.
+            </p>
+        </div>
+    </details>
+    <br><br>
+    <details id="detalles" style="cursor: pointer;">
+        <summary>Arquitectura Segmentada</summary>
+        <div id="contenido" style="cursor: default;">
+            <br>
+            <h2>Arquitectura Segmentada</h2>
+            <p>Es una de las tecnologías utilizadas para realizar la
+                segmentación o paralelismo. Divide el procesador, en etapas,
+                procesa una instrucción diferente en cada una y trabaja con
+                varias a la vez.
+                Pueden trabajar de forma paralela, en diferentes
+                instrucciones, utilizando una cola de instrucciones para su
+                comunicación, denominado entubamiento.
+                La dependencia de datos y de control, que tiene como efecto
+                la disminución del rendimiento del pipelining.
+            </p>
+            <br>
+            <p>
+                La segmentación de cauce (pipelining) es una forma efectiva
+                de organizar el hardware del CPU para realizar más de una
+                operación al mismo tiempo.
+                Consiste en descomponer el proceso de ejecución de las
+                instrucciones en fases o etapas que permitan una ejecución
+                simultánea.
+                Explota el paralelismo entre las instrucciones de un flujo
+                secuencial.
+
+                La segmentación es una técnica de implementación por la
+                cual se solapa la ejecución de múltiples instrucciones.
+                La técnica de implementación clave utilizada para hacer
+                CPU rápidas.
+                La segmentación es como una línea de ensamblaje: cada
+                etapa de la segmentación completa una parte de la
+                instrucción.
+            </p>
+            <br>
+            <p>
+                Como en una línea de ensamblaje, la acción a realizar en una
+                instrucción se descompone en partes más pequeñas, cada una
+                de las cuales necesita una fracción del tiempo necesario para
+                completar la instrucción completa.
+                Cada uno de estos pasos se define como etapa de la
+                segmentación o segmento.
+                Las etapas están conectadas, cada una a la siguiente, para
+                formar una especie de cauce las instrucciones se entran por
+                un extremo, son procesadas a través de las etapas y salen por
+                el otro.
+                La productividad de la segmentación está determinada por la
+                frecuencia con que una instrucción salga del cauce.
+                Como las etapas están conectadas entre sí, todas las etapas
+                deben estar listas para proceder al mismo tiempo. El tiempo
+                requerido para desplazar una instrucción, un paso, a lo largo
+                del cauce es un ciclo máquina.
+                La duración de un ciclo máquina está determinada por el
+                tiempo que necesita la etapa más lenta (porque todas las
+                etapas progresan a la vez).
+                Con frecuencia, el ciclo máquina es un ciclo de reloj (a veces
+                dos, o raramente más), aunque el reloj puede tener múltiples fases.
+            </p>
+            <P>
+                La mejora de velocidad debida a la segmentación es igual al
+                número de etapas.
+            </P>
+            <br>
+            <p>
+                La segmentación consigue una reducción en el tiempo de
+                ejecución medio por instrucción.
+                Esta reducción se puede obtener decrementando la duración
+                del ciclo de reloj de la máquina segmentada o disminuyendo
+                el número de ciclos de reloj por instrucción, o haciendo
+                ambas cosas.
+                El mayor impacto está en el número de ciclos de reloj por
+                instrucción, aunque el ciclo de reloj es, con frecuencia, más
+                corto en una máquina segmentada (especialmente en
+                supercomputadores segmentados).
+            </p>
+            <br>
+            <p>
+                La segmentación es una técnica de implementación, que
+                explota el paralelismo entre las instrucciones de un flujo
+                secuencial. Tiene la ventaja sustancial que, de forma distinta
+                a algunas técnicas de aumento de velocidad, no es visible al
+                programador.
+            </p>
+            <img src="img/unidad1/1.png">
+            <br>
+            <br>
+            <p>Tipos de cauces:</p>
+            <p>Unifunción: ejecutan un único proceso</p>
+            <br>
+            <p>Multifunción: pueden ejecutar varios procesos:</p>
+            <p>Estáticos: en un instante determinado sólo pueden ejecutar
+                uno</p>
+            <p>Dinámicos: pueden ejecutar simultáneamente varios
+                procesos</p>
+            <p>Lineal: a cada etapa sólo le puede seguir otra etapa concreta</p>
+            <p>No lineal: se pueden establecer recorridos complejos de
+                las etapas</p>
+            <br>
+            <h2>Ciclos de Instrucción</h2>
+            <p>Ejecución de instrucciones en 5 ciclos</p>
+            <br>
+            <p>Etapas de cauce</p>
+            <img src="img/Unidad1/2.jpg">
+            <br>
+            <p>Donde:</p>
+            <p>IF: Búsqueda de una instrucción de la memoria</p>
+            <p>ID: Búsqueda de registros y decodificación de instrucciones</p>
+            <p>EXE: Ejecución o cálculo de dirección</p>
+            <p>MEM: Acceso a la memoria de datos.</p>
+            <p>WB: Escribir datos en el archivo de registros</p>
+            <img src="img/unidad1/3.jpg">
+            <br>
+            <br>
+            <p>La segmentación ayuda en la realización de una carga de
+                trabajo.
+                Realiza múltiples tareas simultáneamente utilizando
+                diferentes recursos.
+                La velocidad se incrementa si se aumenta el número de
+                segmentos.
+            </p>
+            <p>
+                La razón de segmentación está dada por el segmento más
+                lento.
+                El tiempo en llenar y vaciar los segmentos reduce la
+                velocidad.
+                Dedica unidades específicas del procesador a cada una de las
+                partes del ciclo de instrucción y ejecutarlas paralelamente.
+            </p>
+            <p>Mejora dramáticamente el rendimiento debido a que en los
+                procesadores tienen etapas en el ciclo de instrucción.
+                La unidad de control se subdivide en dos o más unidades
+                funcionales, cada una encargada de llevar a cabo una parte
+                del ciclo de instrucción.
+                Se comunican a través de una cola de instrucciones
+                (Pipeline).
+            </p>
+        </div>
+    </details>
+    <br><br>
+
+    <details id="detalles" style="cursor: pointer;">
+        <summary>Arquitectura de Multiprosesamiento</summary>
+        <div id="contenido" style="cursor: default;">
+            <br>
+            <h2>Arquitectura de Multiprosesamiento</h2>
+            <p>Se denomina multiprocesador a un computador que cuenta
+                con dos o más microprocesadores (CPUs).
+                El multiprocesador puede ejecutar simultáneamente varios
+                hilos pertenecientes a un mismo proceso o bien a procesos
+                diferentes.
+            </p>
+            <br>
+            <p>
+                La arquitectura NUMA, donde cada procesador tiene acceso
+                y control exclusivo a una parte de la memoria.
+                La arquitectura SMP, donde todos los procesadores
+                comparten toda la memoria.
+                Para que un multiprocesador opere correctamente necesita
+                un sistema operativo especialmente diseñado para ello.
+                La mayoría de los sistemas operativos actuales poseen esta
+                capacidad.
+            </p>
+            <br>
+            <p>Cuando se desea incrementar el desempeño más de lo que
+                permite la técnica de segmentación (pipeline), se requiere
+                utilizar más de un procesador para la ejecución del programa
+                de aplicación.
+            </p>
+            <p>
+                Los CPU de multiprocesamiento según Flynn se clasifican
+                de la siguiente manera:
+            </p>
+            <p>SISO - (Single Instruction, Single Operand) computadoras
+                Monoprocesador
+            </p>
+            <p>
+                SIMO - (Single Instruction, Multiple Operand) procesadores
+                vectoriales, Exenciones MMX
+            </p>
+            <p>MISO - (Multiple Instruction, Single Operand) No
+                implementado
+            </p>
+            <p>MIMO - (Multiple Instruction, Multiple Operand) sistemas
+                SMP, Clusters, GPUs
+            </p>
+            <img src="img/unidad1/4.jpg">
+            <br>
+            <br>
+            <p>
+                Los procesadores vectoriales, son computadoras pensadas
+                para aplicar un mismo algoritmo numérico a una serie de
+                datos matriciales, en especial en la simulación de sistemas
+                físicos complejos, tales como simuladores de clima,
+                explosiones atómicas, reacciones químicas, etc.
+            </p>
+            <p>
+                Donde los datos son representados como grandes números de
+                datos en forma matricial sobre los que se deben se aplicar el
+                mismo algoritmo numérico.
+            </p>
+            <p>La mayoría de los procesadores modernos incluye algunas
+                instrucciones de tipo vectorial, tales como las extensiones al
+                conjunto de instrucciones tales como MMX y SSE. Estas
+                instrucciones les permiten procesar flujos multimedia más
+                eficientemente.
+            </p>
+            <br>
+            <p>
+                Los Procesadores Digitales de Señales (DSP), son
+                procesadores especializados en el procesamiento de señales
+                tales como audio, vídeo, radar, sonar, radio, etc.
+            </p>
+            <p>
+                Cuentan con instrucciones tipo vectorial que los hace muy
+                aptos para dicha aplicación. Suelen utilizarse en conjunto
+                con un microcontrolador en dispositivos como reproductores
+                de audio, reproductores de DVD y Blueray, teléfonos
+                celulares, sistemas de entretenimiento, sistemas de
+                adquisición de datos, instrumentos médicos, controles
+                industriales, etc.
+            </p>
+            <br>
+            <p>
+                En los sistemas SMP (Simetric Multiprocessing), varios
+                procesadores comparten la misma memoria principal y
+                periféricos de Entrada /Salida, normalmente conectados por
+                un bus común.
+            </p>
+            <p>
+                Se conocen como simétricos, ya que ningún procesador toma
+                el papel de maestro y los demás de esclavos, sino que todos
+                tienen derechos similares en cuanto al acceso a la memoria y
+                periféricos y ambos son administrados por el sistema
+                operativo.
+            </p>
+            <p>
+                Pueden formarse con varios núcleos en un solo circuito
+                integrado o con varios circuitos integrados en una misma
+                tarjeta madre. La primera opción ha sido popularizada al
+                hacerse más económicos los procesadores multinúcleo de los
+                principales fabricantes y con su uso en sistemas de gama
+                media y baja, e inclusive en teléfonos celulares y tabletas.
+            </p>
+            <p>
+                La segunda opción fue la que se uso en un principio y sigue
+                siendo usada en en estaciones de trabajo y en servidores de
+                alto rendimiento debido a que incrementa el poder
+                computacional del sistema, pero también incrementa
+                considerablemente el costo del sistema.
+            </p>
+            <br>
+            <img src="img/unidad1/5.jpg">
+            <br>
+            <h2>Clusters</h2>
+            <p>
+                Conjuntos de computadoras independientes conectadas en
+                una red de área local o por un bus de interconexión y que
+                trabajan cooperativamente. Con un sistema de procesamiento
+                paralelo o distribuido. Consta de un conjunto
+                de computadoras independientes, interconectadas entre sí, de
+                tal manera que funcionan como un solo recurso
+                computacional.
+                Es clave en su funcionamiento contar con un sistema
+                operativo y programas de aplicación capaces de distribuir el
+                trabajo entre las computadoras de la red.
+            </p>
+            <p>
+                Este tipo de computadora paralela se ha vuelto muy popular
+                por que permite usar los avances en los procesadores
+                comerciales que tienen una muy buena relación costo
+                rendimiento y se puede incorporar rápidamente los avances
+                que proporciona las nuevas tecnologías en cuanto es
+                económicamente viable.
+            </p>
+            <p>
+                Sin embargo, se debe tener cuidado al implementar la
+                aplicación, ya que si los datos que hay que pasar de un
+                procesador a otro son demasiados, el tiempo empleado en
+                pasar información de un nodo a otro puede sobrepasar a la
+                ganancia que se tiene al dividir el trabajo entre varios
+                procesadores.
+            </p>
+            <img src="img/unidad1/6.jpg">
+            <br>
+            <br>
+            <h2>Procesadores Gráficos</h2>
+            <p>
+                (Graphics Processing Unit GPU)
+            </p>
+            <p>
+                Sistemas diseñados originalmente para el procesamiento de
+                gráficos, con múltiples procesadores vectoriales sencillos
+                compartiendo la misma memoria.
+            </p>
+            <p>
+                La cual también puede ser accedida por el CPU. Por la gran
+                cantidad de núcleos con los que cuenta, logran un excelente
+                desempeño al ejecutar algoritmos que se adaptan a ser
+                paralelizados, a tal grado que muchas de las
+                supercomputadoras más rápidas de la actualidad utilizan
+                estos procesadores, y los fabricantes de tarjetas gráficas
+                producen versiones de sus productos especializadas en
+                acelerar los cálculos de propósito general.
+            </p>
+            <img src="img/unidad1/7.jpg">
+        </div>
+    </details>
+    <br><br>
+
+    <details id="detalles" style="cursor: pointer;">
+        <summary>Análisis de Componentes</summary>
+        <div id="contenido" style="cursor: default;">
+            <br>
+            <h2>Análisis de componentes básicos de una computadora de escritorio</h2>
+            <p>
+                Una
+                computadora está formada fundamentalmente por dos aspectos básicos:
+                Hardware y software.
+            </p>
+            <p>
+                Tenemos componentes esenciales y específicos para tareas puntuales.
+            </p>
+            <br>
+            <h2>Componentes Internos</h2>
+            <p>
+                Cuando hablamos de una computadora nos referimos al conjunto
+                de componentes internos que se encuentra colocados dentro del gabinete.
+                Como sabes, los componentes internos son los que componen el hardware de
+                la computadora.
+            </p>
+            <br>
+            <p>
+                Los principales componentes internos de la computadora son:
+            </p>
+            <br>
+            <p>° Tarjeta madre (Motherboard) , placa base</p>
+            <p>° CPU o procesador</p>
+            <p>° Memoria RAM</p>
+            <p>° Disco duro (HD)</p>
+            <p>° Fuente de alimentación</p>
+            <br>
+            <p>
+                Además por lo general para evitar que en el interior de gabinete se acumule
+                calor que generan estos componentes, se añaden otros elementos que también
+                son considerados componentes internos.
+            </p>
+            <br>
+            <p>
+                Estos pueden ser:
+            </p>
+            <p>° Disipadores</p>
+            <p>° Ventiladores</p>
+            <p>° Refrigeración líquida</p>
+            <br>
+            <br>
+            <h2>Tarjeta Madre (MotherBoard)</h2>
+            <p>
+                La tarjeta madre (MB) , también llamada “placa base” es de los componentes
+                esenciales de las computadoras. En ella se conectan los diferentes
+                componentes internos, incluyendo el procesador CPU, la memoria RAM, la
+                tarjeta gráfica, los discos duros, es decir todos los elementos internos.
+            </p>
+            <p>
+                En su forma, la tarjeta madre están construidas en una placa en la que se
+                encuentra un circuito integrado que interconecta un conjunto de chips, y
+                componentes electrónicos, conectores etc.
+            </p>
+            <br>
+            <p>
+                Además, dentro de una tarjeta madre pueden estar incorporados de fábrica los
+                siguientes componentes:
+            </p>
+            <br>
+            <p>° Tarjeta de sonido</p>
+            <p>° Tarjeta de red</p>
+            <p>° Ranuras de expansión</p>
+            <p>° Tarjeta gráfica</p>
+            <p>° Puertos</p>
+            <br>
+            <p>
+                No todas las placas base son iguales. Por lo que se tiene que saber los
+                componetes y especificaciones que soporte la misma y sean compatibles, el
+                procesador y los componentes.
+            </p>
+            <p>
+                La tarjeta madre es la que va a determinar el tipo de procesador y cantidad de
+                módulos de memoria RAM que pueden instalarse, la cantidad y los tipos de
+
+                discos duros que se conecten y la tarjeta de video que podrás instalar en ella,
+                entre otras cosas.
+            </p>
+            <br>
+            <img src="img/Unidad1/8.jpg">
+            <br>
+            <br>
+            <h2>El procesador Unidad Central de Procesamiento CPU</h2>
+            <p>
+                El CPU es algo así como el cerebro de tu computadora. En realidad es el
+                elemento encargado de analizar y procesar toda la información que ingresa y
+                sale de la computadora.
+            </p>
+            <p>
+                El procesador decodifica y ejecuta las instrucciones de los programas que se
+                encuentran cargados en la memoria principal de la computadora.
+                Además funciona como coordinador y controlador de casi todos los otros
+                componentes, tanto de los internos como de los externos.
+            </p>
+            <p>
+                Debido a su misión dentro de la computadora, el procesador es el que define la
+                velocidad de proceso que logre obtener la computadora. A mayor cantidad de
+                GHz, mayor será la velocidad alcanzada.
+                En cuanto a marcas, las más conocidas en el mercado actual son Intel y
+                AMD.Pero además, los procesadores pueden ser seleccionados por cantidad
+                de los bits a procesar por ciclo:
+            </p>
+            <br>
+            <p>° 32 bits</p>
+            <p>° 64 bits</p>
+            <br>
+            <p>
+                La mayoría de los procesadores suelen incorporar de fábrica un ventilador
+                para mantenerlo en condiciones óptimas de temperatura el componente.
+            </p>
+            <img src="img/Unidad1/9.jpg">
+            <br>
+            <br>
+            <h2>Memoria RAM</h2>
+            <p>
+                La Random Access Memory o más conocida como memoria RAM se conecta
+                a la tarjeta madre y en ella se guardan y se cargan las instrucciones que se
+                ejecutan en el procesador.
+                Esas instrucciones son enviadas desde los componentes y dispositivos
+                conectados a la tarjeta madre y a los puertos de la computadora.
+                Las características principales que definen el funcionamiento de la memoria
+                RAM son (soportadas por la tarjeta madre):
+            </p>
+            <p>° Cantidad de memoria en GB</p>
+            <p>° Tipo de memoria RAM</p>
+            <p>° Velocidad de la memoria.</p>
+            <p>° Tipo de ranura</p>
+            <br>
+            <p>
+                Es importante que tengas claro estos datos para elegir el tipo de
+                memoria RAM correcta para tu equipo. En definitiva la tarjeta madre será el
+                elemento que defina el tipo y la cantidad de RAM que puedes instalar.
+            </p>
+            <img src="img/Unidad1/9.jpg">
+            <br>
+            <br>
+            <h2>Disco duro</h2>
+            <p>
+                El disco duro de tu computadora es el componente encargado de almacenar de
+                forma permanente sistemas operativos así como los datos que ingresan en la
+                computadora.
+            </p>
+            <p>
+                Todo la información que contiene la computadora, incluyendo documentos
+                (archivos, aplicaciones, fotografías música, descargas de internet, etc.) Pero
+                además en él también se almacena el sistema operativo y todos los
+                programas instalados en la computadora.
+                Para poder ser el soporte de almacenamiento principal de la computadora, el
+                disco duro pueden contener grandes cantidades de información.
+                Todos los datos de la computadora se almacenan en el disco duro, de ahí su
+                importancia.
+            </p>
+            <p>
+                Por esto, un disco duro debes tener presente los siguientes datos:
+            </p>
+            <br>
+            <p>° Capacidad</p>
+            <p>° Velocidad de conexión</p>
+            <p>° Velocidad de RPM</p>
+            <br>
+            <p>En cuanto al tipo de conexión que requieren, los discos duros pueden ser:</p>
+            <p>° IDE</p>
+            <p>° SATA</p>
+            <br>
+            <p>
+                Además, hoy existen distintos tipos de discos duros, que se diferencias
+                dependiendo de la tecnología utilizada para su construcción. Hoy puedes
+                encontrar los siguientes tipos de discos duros:
+            </p>
+            <p>° HD (disco mecánico tradicional)</p>
+            <p>° SD (disco de estado sólido)</p>
+            <br>
+            <p>
+                Es importante también destacar que en los últimos tiempos los discos duros
+                tradicionales están siendo reemplazados por modernas unidades de
+                almacenamiento de tipo memoria Flash.
+                Estas memorias flash no emiten calor ni ruido, tampoco se desgastan con el
+                paso del tiempo y son realmente rápidas.
+            </p>
+            <img src="img/Unidad1/11.jpg">
+        </div>
+    </details>
+    <br><br>
+
+    <details id="detalles" style="cursor: pointer;">
+        <summary>Registros</summary>
+        <div id="contenido" style="cursor: default;">
+            <br>
+            <h2>Registros del procesador (CPU)</h2>
+            <p>
+                Los registros que encuentran dentro de cada procesador su
+                función principales almacenar los valores de cada uno de los
+                datos,comandos,instrucciones o estados binarios que son los
+                que ordenan qué dato debe procesarse, así como la forma en
+                la que se debe realizar.
+                Un registro no deja de ser una memoria de velocidad alta y
+                con poca capacidad.
+                Cada registro puede contener una instrucción, una dirección
+                de almacenamiento o cualquier tipo de dato.
+            </p>
+            <br>
+            <p>
+                En un procesador encontramos espacios con una capacidad
+                que oscila entre 4 y 64 bits porque cada registro debe tener un
+                tamaño suficiente para contener una instrucción. En el caso de
+                que un ordenador de 64 bit, cada registro de tener un tamaño
+                de 64 bits.
+
+                Cada procesador tiene varias asignaciones o tareas que debe
+                de realizar para el manejo de la información.
+                La información es recibida generalmente en código binario,
+                procedente de las aplicaciones para, después, procesarlos de
+                una forma determinada.
+
+                Digamos que el procesador traduce esos datos para que
+                nosotros, los usuarios, los entendamos.
+                Dentro de un microprocesador encontramos el registro de
+                información, cuya función es guardar de forma temporal los
+                datos a los que se accede frecuentemente.
+            </p>
+            <img src="img/Unidad1/12.jpg">
+            <br>
+            <br>
+            <h2>Tipos de registros</h2>
+            <p>Los registros del procesador se dividen o clasifican
+                atendiendo al propósito que sirven o a las instrucciones que
+                les ordenan.</p>
+            <br>
+            <h2>Registros de datos</h2>
+            <p>
+                Guardan valores de datos numéricos, como son los
+                caracteres o pequeñas órdenes.
+                Los procesadores antiguos tenían un registro especial de
+                datos: el acumulador, el cual era usado para operaciones
+                determinadas.
+            </p>
+            <br>
+            <h2>Registro de datos de memoria (MDR)</h2>
+            <p>
+                Es un registro que se encuentra en el procesador y que está
+                conectado al bus de datos. Tiene poca capacidad y una
+                velocidad alta por la que escribe o lee los datos del bus que
+                van dirigidos a la memoria o al puerto E/S, es decir, un
+                periférico.
+            </p>
+            <br>
+            <h2>Registros de direcciones</h2>
+            <p>
+                Guardan direcciones que son usadas para acceder a la
+                memoria principal o primaria, que solemos conocer como
+                ROM o RAM. En este sentido, podemos ver procesadores con
+                registros que se usan solo para guardar direcciones o valores
+                numéricos.
+            </p>
+
+            <br>
+            <h2>Registros de propósito general (GPRs)</h2>
+            <p> Son registros que sirven para almacenar direcciones o datos
+                generales. Se trata de una especie de registros mixtos que,
+                como su propio indica, no tienen una función específica.</p>
+            <br>
+            <h2>Registros de propósito específico (SPRs)</h2>
+            <p>
+                En esta ocasión, estamos ante registros que guardan datos del
+                estado del sistema, como puede ser el registro de estado o el
+                instruction pointer.
+            </p>
+            <br>
+            <h2>Registros de estado</h2>
+            <p>
+                Sirven para guardar valores reales cuya función es determinar
+                cuándo una instrucción debe ejecutarse o no.
+                También se le conoce como CCR (Condition Code Register).
+            </p>
+            <br>
+            <p>Dentro de este tipo de registros, encontramos el siguiente:</p>
+            <h2>Registro de bandera o “FLAGS“</h2>
+            <p>
+                Lo encontramos en los procesadores Intel con
+                arquitectura X86. Estamos ante un registro con 16 bits de
+                ancho. Pero, tiene 2 sucesores:
+                EFLAGS, con 32 bits de ancho.
+                RFLAGS, con 64 bits de ancho.
+                Registros de coma flotante.
+            </p>
+            <br>
+            <p>
+                La coma flotante es una representación, en forma de fórmula,
+                de números reales de distintos tamaños que sirve para realizar
+                operaciones aritméticas. Nos encontraremos con ella en
+                sistemas que requieren sistemas de procesados muy rápidos.
+                Por tanto, estos registros guardan estas representaciones en
+                muchísimas arquitecturas.
+            </p>
+
+            <h2>Registros constantes</h2>
+            <p>
+                Su cometido es guardar valores de sólo lectura como son el
+                0, 1 ó π.
+            </p>
+
+            <img src="img/Unidad1/13.jpg">
+
+
+
+        </div>
+    </details>
+
+
+
+    <br><br><br>
+    <div id="pie">
+        <div>
+            <h5><br><img src="img/tec.png"><a id="tec" href="https://saltillo.tecnm.mx" target="_blank"
+                    rel="noopener noreferrer">Instituto
+                    tecnológico de Saltillo</a></h5>
+        </div>
+        <div>
+            <h5 style="margin: 3% 0;"><img src="img/instagram.png"><a
+                    href="https://instagram.com/el_r1chy?igshid=YmMyMTA2M2Y=" target="_blank"
+                    rel="noopener noreferrer">Instagram</a></h5>
+            <h5 style="margin: -1% 0;"><img src="img/facebook.jpg"><a
+                    href="https://www.facebook.com/ricardo.soriaalarcon" target="_blank"
+                    rel="noopener noreferrer">Facebook</a></h5>
+        </div>
+    </div>
+
+
+
+
+
+
+</body>
+
+</html>
